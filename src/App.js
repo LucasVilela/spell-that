@@ -29,29 +29,29 @@ const alphabet = {
   y: "Yankee",
   z: "Zulu",
   "@": "@at",
-  ".": "dot"
+  ".": "dot",
 };
 
 export default function App() {
   const [input, setInput] = useState("");
   return (
-    <div className="App">
-      <h1>Spell {input} for me</h1>
-      <label>
-        <input
-          className="form__input"
-          type="text"
-          name="name"
-          onChange={(e) => setInput(e.target.value.toLocaleLowerCase())}
-        />
-      </label>
-      <div style={{ textAlign: "left" }}>
-        {input.split("").map((i, index) => (
-          <p className="letter" key={index}>
-            {alphabet[i]}
-          </p>
-        ))}
+    <>
+      <div className="App">
+        <h1>Spell {input} for me</h1>
+        <label>
+          <input className="form__input" type="text" name="name" onChange={e => setInput(e.target.value.toLocaleLowerCase())} />
+        </label>
+        <div style={{ textAlign: "left" }}>
+          {input.split("").map((i, index) => (
+            <p className="letter" key={index}>
+              {alphabet[i]}
+            </p>
+          ))}
+        </div>
       </div>
-    </div>
+      <a id="bottom" href="http://www.lucasvilela.com" target="blank">
+        Made with ❤️ by Lucas
+      </a>
+    </>
   );
 }

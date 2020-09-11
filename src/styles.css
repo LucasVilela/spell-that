@@ -49,3 +49,11 @@ h1 {
   -webkit-transform: translateY(-4rem);
   transform: translateY(-4rem);
 }
+
+#bottom {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  cursor: pointer;
+}
