@@ -38,14 +38,17 @@ export default function App() {
       <h1>Spell {input} that for me</h1>
       <label>
         <input
+          className="form__input"
           type="text"
           name="name"
           onChange={(e) => setInput(e.target.value.toLocaleLowerCase())}
         />
       </label>
-      <div style={{ textAlign: "left" }} className="word">
+      <div style={{ textAlign: "left" }}>
         {input.split("").map((i, index) => (
-          <p key={index}>{alphabet[i]}</p>
+          <p className="letter" key={index}>
+            {alphabet[i]}
+          </p>
         ))}
       </div>
     </div>
