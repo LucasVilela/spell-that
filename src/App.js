@@ -50,7 +50,7 @@ export default function App() {
         </div>
       </div>
       <a id="bottom" href="http://www.lucasvilela.com" target="blank">
-        Made with by Lucas
+        Made by Lucas
       </a>
     </>
   );
