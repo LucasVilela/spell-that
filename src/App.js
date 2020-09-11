@@ -36,7 +36,7 @@ export default function App() {
   const [input, setInput] = useState("");
   return (
     <div className="App">
-      <h1>Spell {input} that for me</h1>
+      <h1>Spell {input} for me</h1>
       <label>
         <input
           className="form__input"
