@@ -1,0 +1,14 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+p::first-letter {
+  font-size: 110%;
+  color: #7e0b0b;
+  padding-right: 3px;
+}
+
+.word {
+  margin: 20px 0;
+}
