@@ -28,7 +28,8 @@ const alphabet = {
   x: "X-ray",
   y: "Yankee",
   z: "Zulu",
-  "@": "@at"
+  "@": "@at",
+  ".": "dot"
 };
 
 export default function App() {
